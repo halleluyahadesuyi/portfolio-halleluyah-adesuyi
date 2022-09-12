@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+img {
+    margin: 0;
+}
+
+.header,
+.nav-items {
+    display: flex;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.nav-items {
+    /* justify-content: space-around; */
+    padding: 0 50px;
+}
+
+.logo {
+    width: 10%;
+    border: 2px dashed purple;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.img-and-name {
+   
+}
