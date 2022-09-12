@@ -15,7 +15,8 @@ img {
 }
 
 .header,
-ul {
+ul,
+.language-tool {
     display: flex;
 }
 
@@ -74,3 +75,6 @@ li a {
     margin-bottom: 30px;
 }
 
+.language-tool h4 {
+    padding: 0 10px;
+}
