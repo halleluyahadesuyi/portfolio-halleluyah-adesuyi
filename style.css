@@ -1,10 +1,11 @@
 * {
-    margin: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: purple;
 }
 
 h1,
@@ -16,23 +17,22 @@ img {
 
 .header,
 ul,
+.img-and-name,
 .language-tool {
     display: flex;
 }
 
 .header {
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: 30px 10px;
-    background: purple;
 }
 
 .logo {
-    width: 100px;
-    /* width: 30%; */
+    width: 30%;
     border: 2px dashed white;
     border-radius: 25px;
-    padding: 5px;
+    padding: 3px;
 }
 
 ul {
@@ -48,10 +48,10 @@ li a {
 }
 
 .img-and-name {
-   display: flex;
    flex-direction: column;
    align-items: center;
    padding: 50px 0;
+   background: white;
 }
 
 .profile-img {
@@ -66,9 +66,8 @@ li a {
 }
 
 .about-me {
-    background: purple;
     color: white;
-    padding: 20px 55px;
+    padding: 20px 40px;
     text-align: center;
     font-size: 15px;
 }
@@ -99,15 +98,16 @@ li a {
     padding: 0 20px 0 5px;
 }
 
+/* =========Media Queries======== */
+
 @media (min-width: 420px) {
     .logo {
         width: 200px;
     }
 
-li a {
-    padding: 0 15px;
-    font-size: 25px;
-}
+    li a {
+        font-size: 20px;
+    }
 
     .profile-img {
         width: 350px;
@@ -122,12 +122,18 @@ li a {
     }
 
     .about-me {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .about-me p {
         line-height: 50px;
     }
+
+    .header,
+    .about-me {
+        max-width: 80%;
+        margin: 0 auto;
+}
 }
 
 @media (min-width: 1025px) {
@@ -136,6 +142,12 @@ li a {
     }
 
     .name {
-        font-size: 28px;
+        font-size: 42px;
+    }
+
+    .header,
+    .about-me {
+        max-width: 60%;
+        margin: 0 auto;
     }
 }
