@@ -23,12 +23,12 @@ ul,
 .header {
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px;
+    padding: 30px 10px;
     background: purple;
 }
 
 .logo {
-    width: 15%;
+    width: 120px;
     border: 2px dashed white;
     border-radius: 25px;
     padding: 10px;
@@ -40,9 +40,10 @@ ul {
 
 li a {
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 5px;
     color: white;
     font-weight: bolder;
+    font-size: 10px;
 }
 
 .img-and-name {
@@ -53,20 +54,22 @@ li a {
 }
 
 .profile-img {
-    width: 30%;
+    width: 40%;
     border: 5px solid purple;
     border-radius: 50%;
 }
 
 .name {
     padding-top: 20px;
+    font-size: 20px;
 }
 
 .about-me {
     background: purple;
     color: white;
-    padding: 50px 300px;
+    padding: 50px 60px;
     text-align: center;
+    font-size: 12px;
 }
 
 .about-me h1,
@@ -89,4 +92,83 @@ li a {
 
 .language-tool h4 {
     padding: 0 20px 0 5px;
+}
+
+@media (min-width: 550px) {
+    .header,
+    ul,
+    .language-tool {
+        display: flex;
+    }
+
+    .header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 30px;
+        background: purple;
+    }
+
+    .logo {
+        width: 200px;
+        border: 2px dashed white;
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+        padding: 0 20px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .img-and-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    }
+
+    .profile-img {
+        width: 30%;
+        border: 5px solid purple;
+        border-radius: 50%;
+    }
+
+    .name {
+        padding-top: 20px;
+    }
+
+    .about-me {
+        background: purple;
+        color: white;
+        padding: 50px 300px;
+        text-align: center;
+    }
+
+    .about-me h1,
+    .about-me p,
+    .language-tool {
+        margin-bottom: 30px;
+    }
+
+    .language-tool {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .language-tool img {
+        width: 35px;
+        height: 35px;
+        margin: 15px 0;
+    }
+
+    .language-tool h4 {
+        padding: 0 20px 0 5px;
+    }
 }
