@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background: purple;
+    /* background: purple; */
 }
 
 h1,
@@ -22,20 +22,32 @@ ul,
     display: flex;
 }
 
+.header,
+.about-me {
+    background: purple;
+
+}
+
 .header {
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10px;
+    /* padding: 30px 10px; */
 }
 
 .logo {
-    width: 30%;
+    /* width: 30%; */
+    font-size: 15rem;
     border: 2px dashed white;
     border-radius: 25px;
-    padding: 3px;
+    /* padding: 3px; */
+}
+
+.nav-items {
+    /* margin-right: 20px; */
 }
 
 ul {
+    margin: 0;
     list-style: none;
 }
 
@@ -55,7 +67,7 @@ li a {
 }
 
 .profile-img {
-    width: 250px;
+    max-width: 250px;
     border: 5px solid purple;
     border-radius: 50%;
 }
