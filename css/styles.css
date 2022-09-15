@@ -67,10 +67,6 @@ img {
     border-radius: 5rem;
 }
 
-.active {
-    display: block;
-}
-
 @media(min-width: 400px) {
 
 }
