@@ -37,6 +37,14 @@ img {
     border: 1px solid white;
     border-radius: 3px;
     padding: 0.2rem 0.4rem;
+    text-decoration: none;
+}
+
+.get-in-touch:hover,
+.get-in-touch:focus {
+    background: white;
+    color: rgb(87, 7, 87);
+    border: 2px dashed rgb(87, 7, 87);
 }
 
 .get-in-touch h5 {
@@ -51,7 +59,7 @@ img {
     display: none;
     /* height: 100%; */
     position: absolute;
-    top: 1.6rem;
+    top: 3.4rem;
     right: 0rem;
 }
 
@@ -97,20 +105,52 @@ img {
 }
 
 .img-and-name {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0;
+    /* padding-bottom: 2rem; */
+    background: rgb(87, 7, 87, 0.2);
+    /* background: url("../img/profile-bg.jpg"); */
+}
+
+.profile-bg {
+    width: 100%;
+    height: 22rem;
+    opacity: 0.5;
+}
+
+.profile-img,
+.name,
+.job-title {
+    position: absolute;
+    color: white;
+}
+
+.name,
+.job-title {
+    text-shadow: 2px 4px 2px rgb(87, 7, 87);
+    background: rgb(87, 7, 87, 0.3);
+    margin: 0.6rem;
+    padding: 0.3rem 1rem;
+    border-radius: 3px;
+
 }
 
 .profile-img {
-    max-width: 10rem;
+    max-width: 12rem;
     border: 0.2rem solid rgb(87, 7, 87);
-    border-radius: 5rem;
+    border-radius: 7rem;
+    top: 2rem;
 }
 
 .name {
     margin-top: 0.5rem;
+    top: 14.2rem
+}
+
+.job-title {
+    top: 16.2rem;
 }
 
 .about-me {
