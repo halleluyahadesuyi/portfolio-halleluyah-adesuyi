@@ -25,8 +25,26 @@ img {
 }
 
 .logo {
-    width: 2rem;
-    margin: 0.5rem;
+    width: 3rem;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.get-in-touch {
+    display: flex;
+    /* justify-content: center; */
+    color: white;
+    /* margin: 0 auto; */
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 0.1rem 0.3rem;
+}
+
+.get-in-touch h5 {
+    padding-right: 0.3rem;
+}
+
+.get-in-touch .email-icon {
+    width: 1rem;
 }
 
 .navbar-links {
@@ -47,8 +65,7 @@ img {
     list-style: none;
     padding: 1rem 1rem 0.4rem 0;
     border-bottom: 0.1rem solid black;
-    background: rgba(83, 3, 99, 0.7);
-    
+    background: rgba(83, 3, 99, 0.7);  
 }
 
 .navbar-links a {
@@ -61,14 +78,15 @@ img {
 }
 
 .hamburger-toggle {
-    position: absolute;
+    /* position: absolute;
     top: 0.6rem;
-    right: 1rem;
+    right: 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 1.5rem;
     height: 1.5rem;
+    margin-right: 1rem;
 }
 
 .hamburger-toggle .bar {
